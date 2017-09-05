@@ -47,7 +47,8 @@ public class PainelImagem extends javax.swing.JPanel
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
+    private void initComponents()
+    {
 
         painelConteudo = new javax.swing.JPanel();
         rotuloDescricao1 = new javax.swing.JLabel();
@@ -92,7 +93,7 @@ public class PainelImagem extends javax.swing.JPanel
                 .addGroup(painelConteudoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(checkboxExibir)
                     .addComponent(checkboxAtivar))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(10, Short.MAX_VALUE))
         );
 
         add(painelConteudo, java.awt.BorderLayout.CENTER);
@@ -101,8 +102,10 @@ public class PainelImagem extends javax.swing.JPanel
 
         botaoAvancar.setText("Voltar");
         botaoAvancar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        botaoAvancar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        botaoAvancar.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 botaoAvancarActionPerformed(evt);
             }
         });
