@@ -1,5 +1,9 @@
 package br.univali.portugol.plugin.exemplo;
 
+import br.univali.portugol.nucleo.asa.ASAPrograma;
+import br.univali.portugol.nucleo.asa.NoDeclaracao;
+import java.util.List;
+
 /**
  *
  * @author Luiz Fernando Noschang
@@ -109,11 +113,29 @@ public class PainelInicial extends javax.swing.JPanel
 
     private void botaoTestarActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_botaoTestarActionPerformed
     {//GEN-HEADEREND:event_botaoTestarActionPerformed
+        try{
+            
+        
         String codigoFonte = plugin.getUtilizador().obterCodigoFonteUsuario();
 
-        janelaCdigoFonte.setCodigoFonte(codigoFonte);
+        ASAPrograma asa = plugin.getUtilizador().obterASAProgramaAnalisado();
+        BuscadorDeSimbolos buscadorDeSimbolos = new BuscadorDeSimbolos("ma", asa);
+        List<NoDeclaracao> declaracoes = buscadorDeSimbolos.buscar();
+        
+        StringBuilder sb = new StringBuilder("Símbolos encontrados:\n\n ");
+        
+        for (NoDeclaracao no: declaracoes){
+            sb.append(no.getNome() + "[" + no.getTrechoCodigoFonte().getLinha() + "," + no.getTrechoCodigoFonte().getColuna() + "]");
+            sb.append("\n");
+        }
+        janelaCdigoFonte.setCodigoFonte(sb.toString());
         janelaCdigoFonte.setLocationRelativeTo(null);
         janelaCdigoFonte.setVisible(true);
+        }
+        catch (Exception e){
+            System.err.println("ERRO NO PLUGIN: ");
+            e.printStackTrace(System.err);
+        }
     }//GEN-LAST:event_botaoTestarActionPerformed
 
     private void botaoAvancarActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_botaoAvancarActionPerformed
