@@ -48,7 +48,7 @@
                       <Component id="checkboxExibir" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="checkboxAtivar" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="10" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -57,7 +57,7 @@
         <Component class="javax.swing.JLabel" name="rotuloDescricao1">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="2"/>
-            <Property name="text" type="java.lang.String" value="&lt;html&gt;O plugin permite registrar a&#xe7;&#xf5;es na barra de ferramentas do Portugol Studio.&lt;br&gt;&lt;br&gt;Uma a&#xe7;&#xe3;o j&#xe1; foi definida por este plugin na inicializa&#xe7;&#xe3;o. No entanto, as a&#xe7;&#xf5;es podem ser adicionadas e removidas a qualquer momento.&lt;br&gt;&lt;br&gt;Marque a caixa de sele&#xe7;&#xe3;o abaixo para alternar a exibi&#xe7;&#xe3;o e o estado de um a&#xe7;&#xe3;o din&#xe2;mica.&lt;/html&gt;"/>
+            <Property name="text" type="java.lang.String" value="&lt;html&gt;O plugin permite registrar a&#xe7;&#xf5;es na barra de ferramentas do Portugol Studio.&lt;br&gt;&lt;br&gt;Uma a&#xe7;&#xe3;o j&#xe1; foi definida por este plugin na inicializa&#xe7;&#xe3;o. No entanto, as a&#xe7;&#xf5;es podem ser adicionadas e removidas a qualquer momento.&lt;br&gt;&lt;br&gt;Marque a caixa de sele&#xe7;&#xe3;o abaixo para alternar a exibi&#xe7;&#xe3;o e o estado de um a&#xe7;&#xe3;o din&#xe2;mica.&lt;/html&gt; "/>
             <Property name="verticalAlignment" type="int" value="1"/>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">

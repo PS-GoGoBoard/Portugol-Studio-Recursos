@@ -47,8 +47,7 @@ public class PainelImagem extends javax.swing.JPanel
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents()
-    {
+    private void initComponents() {
 
         painelConteudo = new javax.swing.JPanel();
         rotuloDescricao1 = new javax.swing.JLabel();
@@ -62,7 +61,7 @@ public class PainelImagem extends javax.swing.JPanel
         setLayout(new java.awt.BorderLayout());
 
         rotuloDescricao1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        rotuloDescricao1.setText("<html>O plugin permite registrar ações na barra de ferramentas do Portugol Studio.<br><br>Uma ação já foi definida por este plugin na inicialização. No entanto, as ações podem ser adicionadas e removidas a qualquer momento.<br><br>Marque a caixa de seleção abaixo para alternar a exibição e o estado de um ação dinâmica.</html>");
+        rotuloDescricao1.setText("<html>O plugin permite registrar ações na barra de ferramentas do Portugol Studio.<br><br>Uma ação já foi definida por este plugin na inicialização. No entanto, as ações podem ser adicionadas e removidas a qualquer momento.<br><br>Marque a caixa de seleção abaixo para alternar a exibição e o estado de um ação dinâmica.</html> ");
         rotuloDescricao1.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         rotuloDescricao1.setBorder(javax.swing.BorderFactory.createEmptyBorder(8, 8, 8, 8));
 
@@ -93,7 +92,7 @@ public class PainelImagem extends javax.swing.JPanel
                 .addGroup(painelConteudoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(checkboxExibir)
                     .addComponent(checkboxAtivar))
-                .addContainerGap(10, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         add(painelConteudo, java.awt.BorderLayout.CENTER);
@@ -102,10 +101,8 @@ public class PainelImagem extends javax.swing.JPanel
 
         botaoAvancar.setText("Voltar");
         botaoAvancar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        botaoAvancar.addActionListener(new java.awt.event.ActionListener()
-        {
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
+        botaoAvancar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botaoAvancarActionPerformed(evt);
             }
         });
